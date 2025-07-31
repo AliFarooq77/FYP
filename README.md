@@ -1,4 +1,4 @@
-# Machine Learning-Based Intrusion Detection System with Automated ARP Spoofing (Ghost Route)
+# Machine Learning-Based Intrusion Detection System with Automated ARP Spoofing
 
 This project combines **Machine Learning for Intrusion Detection** with automated **ARP spoofing techniques** to simulate and analyze network behavior in a controlled lab environment.
 
@@ -22,7 +22,7 @@ All spoofing and IDS launching tasks are handled by a single Bash script.
 
 ---
 
-## 🧩 Components
+## Components
 
 ### 1. `arpspoof-esps.sh`
 - Discovers active hosts on the network
