@@ -1,3 +1,8 @@
+###################################
+# Author: Muhammad Ali Farooq
+# Version: 1.0
+###################################
+
 import os
 #import joblib
 from scapy.all import sniff, IP, TCP
@@ -47,7 +52,7 @@ def extract_features(packet):
 # Make a prediction for each packet
 def process_packet(packet):
     if packet.haslayer(TCP) and packet.haslayer(IP):
-        if packet[IP].dst == '192.168.1.108':
+        if packet[IP].dst == '192.168.41.222' or packet[IP].dst == "192.168.41.173":
             features = extract_features(packet)
             feature_values = [features[feature] for feature in MODEL_FEATURES]
             input_df = pd.DataFrame([feature_values], columns=MODEL_FEATURES)

@@ -12,7 +12,7 @@ author(){
 	echo -e "${CYAN}${BOLD}===============================================${NC}"
 	echo -e "${CYAN}${BOLD} Script Name :${NC} ${YELLOW}Network Scanner${NC}"
 	echo -e "${CYAN}${BOLD} Description :${NC} ${YELLOW}Scans for the devices on local network${NC}"
-	echo -e "${CYAN}${BOLD} Author 1    :${NC} ${GREEN}Muhammad Ali Farooq${NC}"
+	echo -e "${CYAN}${BOLD} Author      :${NC} ${GREEN}Muhammad Ali Farooq${NC}"
 	echo -e "${CYAN}${BOLD} Version     :${NC} ${GREEN}1.0${NC}"
 	echo -e "${CYAN}${BOLD}===============================================${NC}"
 }

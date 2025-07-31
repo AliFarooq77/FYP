@@ -1,4 +1,4 @@
-# 🧠 Machine Learning-Based Intrusion Detection System with Automated ARP Spoofing (Ghost Route)
+# Machine Learning-Based Intrusion Detection System with Automated ARP Spoofing (Ghost Route)
 
 This project combines **Machine Learning for Intrusion Detection** with automated **ARP spoofing techniques** to simulate and analyze network behavior in a controlled lab environment.
 
@@ -9,10 +9,10 @@ It is ideal for researchers, students, and cybersecurity enthusiasts interested 
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 
 The goal is to automate:
-- **ARP spoofing of selected ESP32 devices** on a local network (via `Ghost Route` script)
+- **ARP spoofing of selected ESP32 devices** on a local network (via custom script `arpspoof-esps.sh`)
 - **Launching a trained Machine Learning model** that performs real-time classification of traffic as:
   - ✅ Benign
   - 🚨 Denial of Service (DoS)
@@ -24,7 +24,7 @@ All spoofing and IDS launching tasks are handled by a single Bash script.
 
 ## 🧩 Components
 
-### 1. `arp-spf-esps.sh` — Ghost Route Script
+### 1. `arpspoof-esps.sh`
 - Discovers active hosts on the network
 - Spoofs their ARP tables to impersonate ESP32 IPs
 - Launches the Python-based IDS in a new terminal
@@ -43,31 +43,31 @@ All spoofing and IDS launching tasks are handled by a single Bash script.
 
 ---
 
-## 🏗️ Directory Structure
+## Directory Structure
 
 ```
 .
-├── arp-spf-esps.sh                     # Automation + spoofing script
+├── arpspoof-esps.sh                     # Automation + spoofing script
 ├── realtime_IDS_multiclass.py          # Real-time IDS using scapy and ML
 ├── random_forest_for_local_traffic.pkl # Pre-trained model (not included)
 ```
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ml-ids-ghost-route.git
-cd ml-ids-ghost-route
+git clone https://github.com/alifarooq77/FYP.git
+cd FYP
 ```
 
 ### 2. Run the Main Script
 
 ```bash
-chmod +x arp-spf-esps.sh
-sudo ./arp-spf-esps.sh
+chmod +x arpspoof-esps.sh
+sudo ./arpspoof-esps.sh
 ```
 
 The script will:
@@ -77,7 +77,7 @@ The script will:
 
 ---
 
-## 📦 Python Dependencies (Auto Installed)
+## Python Dependencies (Auto Installed)
 
 - scapy
 - pandas
@@ -89,7 +89,7 @@ These are installed automatically in a `myenv` virtual environment.
 
 ---
 
-## 📊 Features Used for Detection
+## Features Used for Detection
 
 The IDS analyzes the following per-packet features:
 - Frame Length
@@ -112,7 +112,7 @@ Use in controlled lab environments only.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Muhammad Ali Farooq**  
 Version: 1.0  
@@ -120,12 +120,12 @@ Tool: Machine Learning IDS + Ghost Route Automation
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the GNU General Public License v3.0.
 
 ---
 
-## 🙌 Contributions
+## Contributions
 
 Feel free to fork, improve, and suggest enhancements!
